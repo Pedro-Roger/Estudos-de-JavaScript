@@ -41,4 +41,16 @@ const pessoas = lista.reduce(funcaoReduce , {})
 
 const chaves = Object.keys(pessoas)
 
-console.log(chaves)
+// console.log(chaves)
+
+// console.log(Object.keys(lista[0])) 
+
+
+const listaDeVolta = chaves.map ((chave) => ({
+    nome: chave, 
+    idade : pessoas[chave].idade
+}))
+
+
+
+console.log(listaDeVolta)
